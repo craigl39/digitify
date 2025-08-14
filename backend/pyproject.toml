@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "digitify-backend"
+version = "0.1.0"
+description = "Digitify Backend - Handwritten Number Recognition system using TensorFlow and FastAPI"
+authors = ["Craig Lofton <craiglofton39@gmail.com>"]
+packages = [{ include = "app" }]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.12"
+fastapi = "^0.110.0"
+uvicorn = { extras = ["standard"], version = "^0.29.0" }
+pandas = "^2.2.0"
+numpy = "^1.26.0"
+matplotlib = "^3.8.0"
+scikit-learn = "^1.4.0"
+python-multipart = "^0.0.9"
+pillow = "^10.3.0"
+opencv-python = "^4.10.0.82"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.0.0"
+isort = "^5.12.0"
+ipykernel = "^6.29.0"
+tqdm = "^4.66.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
